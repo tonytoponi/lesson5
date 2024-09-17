@@ -17,7 +17,7 @@ public class GithubEnterpriseTests {
     }
 
     @Test
-    void AiPageHeaderTest() {
+    void aiPageHeaderTest() {
         open("/");
         $(".HeaderMenu").$(byTagAndText("button", "Enterprise")).hover();
         $(byTagAndText("div", "AI-powered developer platform")).click();
